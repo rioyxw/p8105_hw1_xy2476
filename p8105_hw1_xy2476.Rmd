@@ -52,3 +52,11 @@ as.numeric(as.factor(pull(prob1_df, samp_gt_0))) * pull(prob1_df, samp)
 
 
 ## Problem 2
+
+Load the penguins dataset.
+
+```{r}
+data("penguins", package = "palmerpenguins")
+```
+
+
