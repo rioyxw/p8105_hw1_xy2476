@@ -59,4 +59,6 @@ Load the penguins dataset.
 data("penguins", package = "palmerpenguins")
 ```
 
+The variable names in the dataset includes `r names(penguins)`
 
+The sample size of the dataset is `r nrow(penguins)` penguins
