@@ -55,24 +55,25 @@ as.numeric(as.factor(pull(prob1_df, samp_gt_0))) * pull(prob1_df, samp)
 
 Load the penguins dataset.
 
-```{r}
+```{r load_data}
 data("penguins", package = "palmerpenguins")
 ```
 
-The variable names in the dataset includes `r names(penguins)`
+The variable names in the dataset includes `r names(penguins)`.
 
-The sample size of the dataset is `r nrow(penguins)` penguins
+The sample size of the dataset contains `r nrow(penguins)` penguins.
 
-There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[153, 1]`, and `r penguins[281, 1]`
+There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[153, 1]`, and `r penguins[281, 1]` and the data were collected from three islands in `r penguins [1, 2]`, `r penguins [21, 2]`, and `r penguins [85, 2]`.
 
-The dataset contains `r nrow(penguins)` rows and `r ncol(penguins)` columns
+The dataset contains `r nrow(penguins)` rows and `r ncol(penguins)` columns.
 
-The mean flipper length of the penguins in the dataset is `r mean(pull(penguins, flipper_length_mm), na.rm = TRUE)`
+The mean flipper length of the penguins in the dataset is `r mean(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm.
+
 
 
 Make the scatterplot.
 
-```{r}
+```{r plot_scatter}
 library(ggplot2)
 
 ggplot(penguins, aes(bill_length_mm, flipper_length_mm, color = species)) + geom_point()
