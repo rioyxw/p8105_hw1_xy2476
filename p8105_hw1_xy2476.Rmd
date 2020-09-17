@@ -62,3 +62,5 @@ data("penguins", package = "palmerpenguins")
 The variable names in the dataset includes `r names(penguins)`
 
 The sample size of the dataset is `r nrow(penguins)` penguins
+
+There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[153, 1]`, and `r penguins[281, 1]`
