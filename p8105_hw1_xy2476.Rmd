@@ -65,9 +65,16 @@ The sample size of the dataset is `r nrow(penguins)` penguins.
 
 There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[153, 1]`, and `r penguins[281, 1]`, and the data is collected from three islands in `r penguins[1, 2]`, `r penguins[21, 2]`, and `r penguins[85, 2]`.
 
+The bill length ranges from `r min(pull(penguins, bill_length_mm), na.rm = TRUE)`mm to `r max(pull(penguins, bill_length_mm), na.rm = TRUE)`mm. 
+The bill depth ranges from `r min(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm to `r max(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm. 
+The flipper length ranges from `r min(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm to `r max(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm. 
+The body mass ranges from `r min(pull(penguins, body_mass_g), na.rm = TRUE)`g to `r max(pull(penguins, body_mass_g), na.rm = TRUE)`g.
+The data was collected from `r min(pull(penguins, year), na.rm = TRUE)` to `r max(pull(penguins, year), na.rm = TRUE)`.
+
 The dataset contains `r nrow(penguins)` rows and `r ncol(penguins)` columns.
 
 The mean flipper length of the penguins in the dataset is `r mean(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm.
+
 
 
 
