@@ -44,7 +44,7 @@ as.numeric(pull(prob1_df, factor_vec))
 ```
 
 Try converting logical vector and multiply the random sample.
-```{r try_factor_numeric}
+```{r try_factor_numeric, eval = FALSE}
 as.numeric(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
 as.factor(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
 as.numeric(as.factor(pull(prob1_df, samp_gt_0))) * pull(prob1_df, samp)
