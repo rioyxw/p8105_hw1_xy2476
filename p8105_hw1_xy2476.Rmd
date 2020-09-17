@@ -59,11 +59,11 @@ Load the penguins dataset.
 data("penguins", package = "palmerpenguins")
 ```
 
-The penguins dataset collected `r ncol(penguins) ` variables and they are `r names(penguins)`.
+The penguins dataset collected `r ncol(penguins)` variables and they are `r names(penguins)`.
 
 The sample size of the dataset is `r nrow(penguins)` penguins.
 
-There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[153, 1]`, and `r penguins[281, 1]` and the data is collected from three islands in `r penguins [1, 2]`, `r penguins [21, 2]`, and `r penguins [85, 2]`.
+There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[153, 1]`, and `r penguins[281, 1]`, and the data is collected from three islands in `r penguins[1, 2]`, `r penguins[21, 2]`, and `r penguins[85, 2]`.
 
 The dataset contains `r nrow(penguins)` rows and `r ncol(penguins)` columns.
 
