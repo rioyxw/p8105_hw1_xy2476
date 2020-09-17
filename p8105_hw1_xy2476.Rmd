@@ -67,3 +67,5 @@ There are three penguin species in the dataset: `r penguins[1, 1]`, `r penguins[
 
 The dataset contains `r nrow(penguins)` rows and `r ncol(penguins)` columns
 
+The mean flipper length of the penguins in the dataset is `r mean(pull(penguins, flipper_length_mm), na.rm = TRUE)`
+
