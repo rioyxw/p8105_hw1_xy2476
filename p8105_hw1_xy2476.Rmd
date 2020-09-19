@@ -67,10 +67,10 @@ The sample size of the dataset is `r nrow(penguins)` penguins.
 There are three penguin species: `r levels(pull(penguins, "species"))`, and the data is collected from three islands: `r levels(pull(penguins, "island"))`.
 
 The penguins dataset collected `r ncol(penguins)` variables and they are `r names(penguins)`.
-The bill length ranges from `r min(pull(penguins, bill_length_mm), na.rm = TRUE)`mm to `r max(pull(penguins, bill_length_mm), na.rm = TRUE)`mm. 
-The bill depth ranges from `r min(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm to `r max(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm. 
+The bill length ranges from `r min(pull(penguins, bill_length_mm), na.rm = TRUE)`mm to `r max(pull(penguins, bill_length_mm), na.rm = TRUE)`mm and the average bill length is `r mean(pull(penguins, bill_length_mm), na.rm = TRUE)`mm.
+The bill depth ranges from `r min(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm to `r max(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm and the average bill depth is `r mean(pull(penguins, bill_depth_mm), na.rm = TRUE)`mm.
 The flipper length ranges from `r min(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm to `r max(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm. 
-The body mass ranges from `r min(pull(penguins, body_mass_g), na.rm = TRUE)`g to `r max(pull(penguins, body_mass_g), na.rm = TRUE)`g.
+The body mass ranges from `r min(pull(penguins, body_mass_g), na.rm = TRUE)`g to `r max(pull(penguins, body_mass_g), na.rm = TRUE)`g and the average body mass is `r mean(pull(penguins, body_mass_g), na.rm = TRUE)`g.
 The data was collected from `r min(pull(penguins, year), na.rm = TRUE)` to `r max(pull(penguins, year), na.rm = TRUE)`.
 
 The mean flipper length of the penguins in the dataset is `r mean(pull(penguins, flipper_length_mm), na.rm = TRUE)`mm.
